@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\data\\output",
+    "\\python",
+    "\\sql",
+    "\\sql\\customer_identity",
+    "\\sql\\ddl",
+    "\\sql\\dml"
+  ],
+  "SelectedNode": "\\python\\utils.py",
+  "PreviewInSolutionExplorer": false
+}

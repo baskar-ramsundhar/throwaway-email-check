@@ -1,0 +1,9 @@
+Required Python Libraries
+pandas
+requests
+datetime
+hashlib
+json
+
+Create Snowflake trial account for executing the DDL SQL scripts, loading the data in to the required tables and executing the DML SQL scripts
+Sample data for populating the CUSTOMER_IDENTITY table

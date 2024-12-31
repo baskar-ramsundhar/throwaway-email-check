@@ -1,0 +1,6 @@
+{
+    "api_url": "https://throwaway.cloud/api/v2/",
+    "input_csv": "data/input/email-sample.csv",
+    "hash_emails": true,
+    "output_csv": "data/output/email-sample-throwaway-status.csv"
+}
