@@ -8,7 +8,9 @@ The Python script `etl.py` reads email addresses from an input CSV, checks each 
 
 The script can optionally hash email addresses using SHA256.
 
-The SQL scripts in `sql/ddl` define the schema and tables to store the results.
+The SQL script in `sql/ddl` define the schema and tables to store the results.
+
+The SQL script in 'sql/dml' contains four questions/queries 
 
 ## Prerequisites
 
