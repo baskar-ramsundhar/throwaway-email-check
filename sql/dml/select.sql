@@ -9,14 +9,19 @@ having count(1) > 1;
 
 --Q2) Write a query to identify which institutions have the highest rate of throwaway email addresses. Use an appropriate join in your solution.
 
-select ci.institution, count(1)
-from customer_identity as ci
-     inner join throwaway_email_results as tr
-     on ci.email = tr.email
-where tr.throwawaystatus = TRUE
-group by ci.institution
-order by count(1) desc;
-
+SELECT
+    ci.Institution,
+    SUM(CASE WHEN ter.throwawaystatus = 'true' THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS ThrowawayRate
+FROM
+    customer_identity ci
+INNER JOIN
+    throwaway_email_results ter
+ON
+    ci.Email = ter.Email
+GROUP BY
+    ci.Institution
+ORDER BY
+    ThrowawayRate DESC;
 --Q3) Write a query to retrieve any emails which have not yet been run through your pipeline.
 
 select distinct(ci.email)
